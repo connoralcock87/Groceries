@@ -5,7 +5,7 @@ exports.up = function(knex, Promise) {
     table.text('name').notNullable();
     table.text('brand');
     table.integer('quantity').notNullable();
-  }
+  });
 };
 
 exports.down = function(knex, Promise) {
