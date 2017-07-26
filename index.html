@@ -6,5 +6,28 @@
   </head>
   <body>
 
+    <form>
+  Add New Item-<br>
+  Name:<br>
+  <input type="text" name="name" value=""><br>
+  Brand:<br>
+  <input type="text" brand="brand" value=""><br>
+  Quantity:<br>
+  <input type="integer" number="number" value=""><br>
+  <input type="submit" value="Submit">
+  <select class="item" name="item">
+      <option value="" disabled selected>Select an item here</option>
+  </select>
+    <button onclick="myFunction()">Display item</button>
+  <button onclick="myFunction()">List all</button>
+</form>
+
+<p class="displayed">
+</p>
+
+<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   </body>
 </html>
