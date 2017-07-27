@@ -1,15 +1,11 @@
-const path = require("path");
+// const path = require("path");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const express = require('express');
-const app = express();
+// const express = require('express');
+// const app = express();
+// const route = app('/.routes.js');
+const knex = require('./db/knex.js');
 
-app.use('/grocery', express.static('../grocery'));
-
-app.get('/grocery', function (request, response) {
-  response.json(groceries);
+knex('grocery').select('*').then(function(groceries) {
+  console.log(groceries)
 });
-
-app.get('/grocery:id')
-
-app.listen(process.env.PORT || 3000);
