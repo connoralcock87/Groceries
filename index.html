@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
     <title>Grocery List</title>
   </head>
   <body>
 
-    <form>
-  Add New Item-<br>
-  Name:<br>
-  <input type="text" name="name" value=""><br>
-  Brand:<br>
-  <input type="text" brand="brand" value=""><br>
-  Quantity:<br>
-  <input type="integer" number="number" value=""><br>
-  <input type="submit" value="Submit">
-  <select class="item" name="item">
-      <option value="" disabled selected>Select an item here</option>
-  </select>
-    <button onclick="myFunction()">Display item</button>
-  <button onclick="myFunction()">List all</button>
-</form>
+
+<div class="row" id="box">
+    <form class="col s12">
+      <h5>Add item</h5>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="name" type="text" class="validate">
+          <label for="name">Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="brand" type="text" class="validate">
+          <label for="brand">Brand</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="quantity" type="integer" class="validate">
+          <label for="quantity">Quantity</label>
+        </div>
+      </div>
+      <div class=btns>
+      <input type="submit" value="Submit">
+      <select class="item" name="item">
+          <option value="" disabled selected>Select an item here</option>
+      </select>
+        <button onclick="myFunction()">Display item</button>
+      <button onclick="myFunction()">List all</button>
+    </div>
+    </form>
+  </div>
+
 
 <div class="displayed">
 </div>
 
-<script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   </body>
 </html>
